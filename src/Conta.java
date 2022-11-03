@@ -38,9 +38,16 @@ public class Conta {
 	 }else{
 		 return false;
 	 }
+	 
 	}
 	public double depositar(double valor){
 		saldo= saldo + valor;
 		return saldo;
 	}
-	 }
+	public void transferir(double saldo, Conta destinatario){
+		this.saldo+= saldo;
+		destinatario.saldo+=saldo;
+
+	}
+
+}
