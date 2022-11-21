@@ -33,5 +33,5 @@ public class Cliente {
 	public String getEndereco() {
 		return endereco;
 	}
-
+	
 }
